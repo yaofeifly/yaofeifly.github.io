@@ -1,0 +1,15 @@
+<div class="docs-header" id="content">
+
+  <div class="container">
+  	{% if page.title%}
+  		<!--
+		    <h1>{{ page.title }}</h1>
+		    <p>Post on {{ page.date | date: "%b %d, %Y" }} by <a href="/about">{{ site.author }}</a></p>
+		-->
+		    <h1 style="font-family: cursive;">{{ site.motto }}</h1>
+    {% else %}
+	    <h1 style="font-family: serif;">{{ site.name }}</h1>
+	    <p style="font-family: cursive;">{{ site.description }}</p>
+    {% endif %}
+  </div>
+</div>
