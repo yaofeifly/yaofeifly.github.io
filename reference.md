@@ -9,7 +9,7 @@ permalink: /reference/
 
 
 
-* #### 胖爹博客: [https://chenym1992.github.io/](http://127.0.0.1 "https://chenym1992.github.io/")
+* #### 胖爹博客: [https://chenym1992.github.io/](http://192.168.128.129 "https://chenym1992.github.io/")
 
 * #### P神: [https://www.leavesongs.com/](https://www.leavesongs.com/ "https://www.leavesongs.com/")
 
