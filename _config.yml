@@ -22,5 +22,5 @@ highlighter: Rouge
 # Build settings
 markdown: kramdown
 
-baidu_analysis: 94be4b0f9fc5d94cc0d0415ea6761ae9
+baidu_analysis: da5cbdd8499c1de8f991c49cc0418fe5
 
